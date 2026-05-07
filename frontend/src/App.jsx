@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useRef, createContext, useContext } from "react";
 
 // ─── API ──────────────────────────────────────────────────────────────────────
-const API = "http://localhost:5000/api";
+const API = "https://vagalongames.onrender.com/api";
 const apiFetch = async (url, options = {}) => {
   const token = localStorage.getItem("vg_token");
   const res = await fetch(`${API}${url}`, {
